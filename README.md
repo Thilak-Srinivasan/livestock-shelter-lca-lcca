@@ -154,22 +154,22 @@ This study addresses these gaps by integrating thermal physics, embodied carbon 
 | Net Annual Benefit (₹) | 2,129 | 2,417 | 950 |
 | PWF @ 7.5%, 30 yr | 11.37 | 11.37 | 11.37 |
 | **NPV Result (₹)** | **−75,041** | **−1,19,005** | **−1,04,201** |
-| Cost-Effective? | ❌ NO | ❌ NO | ❌ NO |
+| Cost-Effective? | ![NO](https://img.shields.io/badge/NO-%E2%9C%97-red?style=flat-square) | ![NO](https://img.shields.io/badge/NO-%E2%9C%97-red?style=flat-square) | ![NO](https://img.shields.io/badge/NO-%E2%9C%97-red?style=flat-square) |
 
 ### Sensitivity Analysis: NPV Under Varying Conditions (EPS)
 
 | Scenario | Net Benefit (₹) | NPV (₹) | Viable? |
 |----------|----------------|---------|---------|
-| EPS @ 6% discount | 2,200 | −68,122 | ❌ |
-| EPS @ 7.5% discount (baseline) | 2,200 | −74,256 | ❌ |
-| EPS @ 9% discount | 2,200 | −78,824 | ❌ |
-| EPS @ 12% discount | 2,200 | −84,546 | ❌ |
-| EPS @ ₹6/kWh | 1,800 | −83,550 | ❌ |
-| EPS @ ₹7/kWh (baseline) | 2,200 | −74,256 | ❌ |
-| EPS @ ₹10/kWh | 3,150 | −57,195 | Borderline |
-| EPS @ ₹15/kWh (commercial) | 4,725 | −21,495 | ✅ |
-| PUR @ ₹7/kWh | 2,418 | −1,20,042 | ❌ |
-| PUR @ ₹15/kWh (commercial) | 5,208 | −39,292 | Marginal ✅ |
+| EPS @ 6% discount | 2,200 | −68,122 | ![NO](https://img.shields.io/badge/NO-%E2%9C%97-red?style=flat-square) |
+| EPS @ 7.5% discount (baseline) | 2,200 | −74,256 | ![NO](https://img.shields.io/badge/NO-%E2%9C%97-red?style=flat-square) |
+| EPS @ 9% discount | 2,200 | −78,824 | ![NO](https://img.shields.io/badge/NO-%E2%9C%97-red?style=flat-square) |
+| EPS @ 12% discount | 2,200 | −84,546 | ![NO](https://img.shields.io/badge/NO-%E2%9C%97-red?style=flat-square) |
+| EPS @ ₹6/kWh | 1,800 | −83,550 | ![NO](https://img.shields.io/badge/NO-%E2%9C%97-red?style=flat-square) |
+| EPS @ ₹7/kWh (baseline) | 2,200 | −74,256 | ![NO](https://img.shields.io/badge/NO-%E2%9C%97-red?style=flat-square) |
+| EPS @ ₹10/kWh | 3,150 | −57,195 | ![Borderline](https://img.shields.io/badge/Borderline-%7E-orange?style=flat-square) |
+| EPS @ ₹15/kWh (commercial) | 4,725 | −21,495 | ![YES](https://img.shields.io/badge/YES-%E2%9C%93-brightgreen?style=flat-square) |
+| PUR @ ₹7/kWh | 2,418 | −1,20,042 | ![NO](https://img.shields.io/badge/NO-%E2%9C%97-red?style=flat-square) |
+| PUR @ ₹15/kWh (commercial) | 5,208 | −39,292 | ![Marginal YES](https://img.shields.io/badge/Marginal-%E2%9C%93-yellow?style=flat-square) |
 
 ### 30-Year Cumulative NPV Progression (EPS @ ₹7/kWh)
 
