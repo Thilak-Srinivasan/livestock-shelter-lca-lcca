@@ -154,22 +154,22 @@ This study addresses these gaps by integrating thermal physics, embodied carbon 
 | Net Annual Benefit (₹) | 2,129 | 2,417 | 950 |
 | PWF @ 7.5%, 30 yr | 11.37 | 11.37 | 11.37 |
 | **NPV Result (₹)** | **−75,041** | **−1,19,005** | **−1,04,201** |
-| Cost-Effective? | ![NO](https://img.shields.io/badge/NO-%E2%9C%97-red?style=flat-square) | ![NO](https://img.shields.io/badge/NO-%E2%9C%97-red?style=flat-square) | ![NO](https://img.shields.io/badge/NO-%E2%9C%97-red?style=flat-square) |
+| Cost-Effective? | <img src="assets/no.svg" height="18"> | <img src="assets/no.svg" height="18"> | <img src="assets/no.svg" height="18"> |
 
 ### Sensitivity Analysis: NPV Under Varying Conditions (EPS)
 
 | Scenario | Net Benefit (₹) | NPV (₹) | Viable? |
 |----------|----------------|---------|---------|
-| EPS @ 6% discount | 2,200 | −68,122 | ![NO](https://img.shields.io/badge/NO-%E2%9C%97-red?style=flat-square) |
-| EPS @ 7.5% discount (baseline) | 2,200 | −74,256 | ![NO](https://img.shields.io/badge/NO-%E2%9C%97-red?style=flat-square) |
-| EPS @ 9% discount | 2,200 | −78,824 | ![NO](https://img.shields.io/badge/NO-%E2%9C%97-red?style=flat-square) |
-| EPS @ 12% discount | 2,200 | −84,546 | ![NO](https://img.shields.io/badge/NO-%E2%9C%97-red?style=flat-square) |
-| EPS @ ₹6/kWh | 1,800 | −83,550 | ![NO](https://img.shields.io/badge/NO-%E2%9C%97-red?style=flat-square) |
-| EPS @ ₹7/kWh (baseline) | 2,200 | −74,256 | ![NO](https://img.shields.io/badge/NO-%E2%9C%97-red?style=flat-square) |
-| EPS @ ₹10/kWh | 3,150 | −57,195 | ![Borderline](https://img.shields.io/badge/Borderline-%7E-orange?style=flat-square) |
-| EPS @ ₹15/kWh (commercial) | 4,725 | −21,495 | ![YES](https://img.shields.io/badge/YES-%E2%9C%93-brightgreen?style=flat-square) |
-| PUR @ ₹7/kWh | 2,418 | −1,20,042 | ![NO](https://img.shields.io/badge/NO-%E2%9C%97-red?style=flat-square) |
-| PUR @ ₹15/kWh (commercial) | 5,208 | −39,292 | ![Marginal YES](https://img.shields.io/badge/Marginal-%E2%9C%93-yellow?style=flat-square) |
+| EPS @ 6% discount | 2,200 | −68,122 | <img src="assets/no.svg" height="18"> |
+| EPS @ 7.5% discount (baseline) | 2,200 | −74,256 | <img src="assets/no.svg" height="18"> |
+| EPS @ 9% discount | 2,200 | −78,824 | <img src="assets/no.svg" height="18"> |
+| EPS @ 12% discount | 2,200 | −84,546 | <img src="assets/no.svg" height="18"> |
+| EPS @ ₹6/kWh | 1,800 | −83,550 | <img src="assets/no.svg" height="18"> |
+| EPS @ ₹7/kWh (baseline) | 2,200 | −74,256 | <img src="assets/no.svg" height="18"> |
+| EPS @ ₹10/kWh | 3,150 | −57,195 | <img src="assets/borderline.svg" height="18"> |
+| EPS @ ₹15/kWh (commercial) | 4,725 | −21,495 | <img src="assets/yes.svg" height="18"> |
+| PUR @ ₹7/kWh | 2,418 | −1,20,042 | <img src="assets/no.svg" height="18"> |
+| PUR @ ₹15/kWh (commercial) | 5,208 | −39,292 | <img src="assets/marginal.svg" height="18"> |
 
 ### 30-Year Cumulative NPV Progression (EPS @ ₹7/kWh)
 
@@ -254,7 +254,7 @@ The optimum thermal management system for BSh-climate livestock shelters integra
 - Function: Steady-state thermal resistance + latent heat management of animal-generated humidity (150–200 W latent heat per cow)
 - BIS 1796:2005 compliance: maintains indoor air quality and humidity control
 
-> ⚠️ **Insulation Conflict Warning:** Placing high-R conventional insulation adjacent to the PCM layer can prevent the PCM from reaching its phase-change temperature, rendering latent heat capacity unused. The PCM must be positioned exterior to all resistive insulation layers. Whole-building dynamic simulation (EnergyPlus) is required to validate layering configurations.
+> <img src="assets/warning.svg" height="18"> **Insulation Conflict Warning:** Placing high-R conventional insulation adjacent to the PCM layer can prevent the PCM from reaching its phase-change temperature, rendering latent heat capacity unused. The PCM must be positioned exterior to all resistive insulation layers. Whole-building dynamic simulation (EnergyPlus) is required to validate layering configurations.
 
 ---
 
@@ -262,6 +262,12 @@ The optimum thermal management system for BSh-climate livestock shelters integra
 
 ```
 livestock-shelter-lca-lcca/
+├── assets/
+│   ├── no.svg                              # Badge — not viable
+│   ├── yes.svg                             # Badge — viable
+│   ├── borderline.svg                      # Badge — borderline
+│   ├── marginal.svg                        # Badge — marginal yes
+│   └── warning.svg                         # Badge — insulation conflict warning
 ├── report/
 │   └── Economic_and_Environmental_LCA_Livestock_Shelters_India.pdf
 ├── data/
