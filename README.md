@@ -70,6 +70,10 @@ This study addresses these gaps by integrating thermal physics, embodied carbon 
 | Winter Relative Humidity | 35%–45% | IMD |
 | Baseline Cooling Load (100 m² roof) | 2,500 kWh/year | Calculated |
 
+![Fig 1 — Average solar radiation and ambient temperature in Pilani, June 21](figures/solar_radiation_pilani_june21.png)
+
+**Figure 1.** Average solar radiation (W/m²) and ambient temperature (°C) at Pilani, Rajasthan on June 21 — the peak summer day. Solar irradiance peaks at ~1,000 W/m² at 14:00 h while ambient temperature reaches ~39.5°C, establishing the extreme thermal boundary conditions that the shelter roof assembly must resist. *(Adapted from Jakhar et al., 2023)*
+
 ---
 
 ## Material Properties & CAPEX
@@ -171,6 +175,10 @@ This study addresses these gaps by integrating thermal physics, embodied carbon 
 | PUR @ ₹7/kWh | 2,418 | −1,20,042 | ![NO](https://img.shields.io/badge/-NO-red?style=flat-square) |
 | PUR @ ₹15/kWh (commercial) | 5,208 | −39,292 | ![Marginal YES](https://img.shields.io/badge/-Marginal_YES-yellow?style=flat-square) |
 
+![Fig 3 — Effect of electricity tariff on NPV for EPS and PUR insulation scenarios](figures/npv_vs_tariff_eps_pur.png)
+
+**Figure 3.** Effect of electricity tariff (₹/kWh) on Net Present Value (₹) for EPS 50 mm and PUR 50 mm insulation scenarios over a 30-year project lifespan at a 7.5% discount rate. Both materials remain persistently non-viable at the subsidized agricultural tariff of ₹7/kWh. EPS approaches viability (NPV = −₹21,495) only at the commercial tariff of ₹15/kWh. The break-even line (NPV = 0) is shown as a dotted reference.
+
 ### 30-Year Cumulative NPV Progression (EPS @ ₹7/kWh)
 
 | Year | Net Benefit (₹) | Discount Factor | Present Value (₹) | Cumulative NPV (₹) |
@@ -185,6 +193,10 @@ This study addresses these gaps by integrating thermal physics, embodied carbon 
 | 30 | 1,775 | 0.1142 | 203 | −78,489 |
 
 The cumulative NPV never crosses zero — simple payback is not achieved within the 30-year service life at subsidized agricultural tariffs.
+
+![Fig 4 — 30-year cumulative NPV progression for EPS insulation at Rs. 7/kWh](figures/cumulative_npv_30yr_eps.png)
+
+**Figure 4.** Thirty-year cumulative NPV progression for the EPS 50 mm insulation scenario at ₹7/kWh and a 7.5% discount rate. Starting at −₹99,250 (Year 0), the NPV recovers only to −₹78,489 by Year 30 — never reaching the break-even threshold (dotted line at NPV = 0). The shaded area represents the persistent financial deficit over the entire service life, confirming that energy savings alone cannot justify the capital investment under current agricultural tariff conditions.
 
 ---
 
@@ -265,12 +277,12 @@ livestock-shelter-lca-lcca/
 ├── report/
 │   └── Economic_and_Environmental_LCA_Livestock_Shelters_India.pdf
 ├── data/
-│   └── Livestock_Shelter_LCCA.xlsx        # Full LCCA workbook: NPV, sensitivity, cash flow tables
+│   └── Livestock_Shelter_LCCA.xlsx              # Full LCCA workbook: NPV, sensitivity, cash flow tables
 ├── figures/
-│   ├── solar_radiation_pilani_june21.png   # Fig 1 — Diurnal solar radiation & temperature, Pilani
-│   ├── pcm_envelope_configurations.png     # Fig 2 — PCM layer placement strategies (interior/exterior/combined)
-│   ├── npv_vs_tariff_eps_pur.png           # Fig 3 — NPV sensitivity to electricity tariff (EPS vs PUR)
-│   └── cumulative_npv_30yr_eps.png         # Fig 4 — 30-year cumulative NPV progression (EPS @ ₹7/kWh)
+│   ├── solar_radiation_pilani_june21.png         # Fig 1 — Diurnal solar radiation & ambient temperature, Pilani (June 21)
+│   ├── pcm_envelope_configurations.png           # Fig 2 — PCM layer placement strategies: interior / exterior / combined with EPS
+│   ├── npv_vs_tariff_eps_pur.png                 # Fig 3 — NPV sensitivity to electricity tariff (EPS 50mm vs PUR 50mm)
+│   └── cumulative_npv_30yr_eps.png               # Fig 4 — 30-year cumulative NPV progression (EPS @ ₹7/kWh)
 └── README.md
 ```
 
